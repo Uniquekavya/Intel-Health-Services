@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Hospitals</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <h1>Search Hospitals</h1>
+    <form method="GET" action="{% url 'search_hospitals' %}">
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for hospital in hospitals %}
+            <li>{{ hospital.Name }} - {{ hospital.Address }} - {{ hospital.Specialties }} - {{ hospital.contactnumber }}</li>
+        {% empty %}
+            <li>No hospitals found.</li>
+        {% endfor %}
+    </ul>
+    <p>{{ message }}</p>
+</body>
+</html>
+

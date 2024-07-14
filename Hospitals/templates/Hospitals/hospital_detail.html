@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ hospital.Name }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>{{ hospital.Name }}</h1>
+    <p>Address: {{ hospital.Address }}</p>
+    <p>Latitude: {{ hospital.latitude }}</p>
+    <p>Longitude: {{ hospital.longitude }}</p>
+    <p>Specialties: {{ hospital.Specialties }}</p>
+    <p>Contact Number: {{ hospital.contactnumber }}</p>
+    <p>Website: <a href="{{ hospital.Websitelink }}">{{ hospital.Websitelink }}</a></p>
+</body>
+</html>

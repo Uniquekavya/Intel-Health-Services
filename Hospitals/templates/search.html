@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Hospitals</title>
+</head>
+<body>
+    <h1>Search Hospitals</h1>
+    <form method="GET" action="{% url 'hospital_list' %}">
+        <input type="text" name="q" placeholder="Search hospitals">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
+
+

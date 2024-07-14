@@ -1,0 +1,40 @@
+<!-- intel/templates/base_generic.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <!-- Include common CSS stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Include additional CSS files as needed -->
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Welcome to Intel Health Services</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'search_hospitals' %}">Search Hospitals</a></li>
+                <!-- Add more navigation links here as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; {% now "Y" %} Intel Health Services. All rights reserved.</p>
+    </footer>
+
+    <!-- Include common JavaScript files -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- Include additional JavaScript files as needed -->
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-image: url('../images/https://imgb14.photophoto.cn/20200616/xianshangyiliao-38134295_3.jpg'); /* Replace 'your-image.jpg' with your actual image file name */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

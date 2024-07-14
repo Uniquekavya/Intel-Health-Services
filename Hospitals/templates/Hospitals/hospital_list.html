@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospitals List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>List of Hospitals</h1>
+    <form method="GET" action="{% url 'hospital_list' %}">
+        <input type="text" name="q" placeholder="Search hospitals">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% if hospitals %}
+            {% for hospital in hospitals %}
+                <li><a href="{% url 'hospital_detail' hospital.pk %}">{{ hospital.Name }}</a></li>
+            {% endfor %}
+        {% else %}
+            <li>No hospitals found.</li>
+        {% endif %}
+    </ul>
+</body>
+</html>
+

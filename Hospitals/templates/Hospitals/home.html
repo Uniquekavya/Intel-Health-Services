@@ -1,0 +1,43 @@
+<!-- hospital/templates/hospital/home.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intel Health Services</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to Intel Health Services</h1>
+    
+    <h2>About Us</h2>
+<p>Welcome to Intel Health Services, your comprehensive source for hospital information. Our mission is to provide accurate and up-to-date details about hospitals to help you make informed healthcare decisions.</p>
+
+<p>At Intel Health Services, we understand the importance of accessible and reliable healthcare information. That's why we have meticulously compiled data on various hospitals, including their addresses, contact numbers, specialties, and more. Our user-friendly platform ensures you can easily search and find the hospital that best meets your needs.</p>
+
+<p>Our team is dedicated to maintaining the highest standards of quality and accuracy. We continuously update our database to ensure you have access to the latest information. Whether you are looking for a specialized healthcare facility or the nearest hospital, Intel Health Services is here to assist you.</p>
+
+<p>Thank you for choosing Intel Health Services. We are committed to supporting your healthcare journey with the information you need.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li><a href="{% url 'search_hospitals' %}">Effortlessly search for hospitals</a> using various criteria such as name, address, specialties, and contact information.</li>
+        <li>Access in-depth details for each hospital, including its name, address, specialties offered, contact numbers, and a direct link to its website.</li>
+        <li>Manage your account effortlessly through our <a href="{% url 'dashboard' %}">user-friendly dashboard</a>. View your recent activities, manage your profile, and access personalized settings, all in one place.</li>
+        <li>Keep your information current and secure with our comprehensive profile management system</a>.</li>
+        <li>Submit your suggestions, comments, or concerns directly through the app using our <a href="#feedback">feedback system</a>.</li>
+        <li>Experience a seamless and secure authentication process with our easy-to-use <a href="{% url 'login' %}">login</a> and <a href="{% url 'register' %}">registration</a> pages.</li>
+        <li>Access Intel Health Services on the go with our mobile-friendly design.</li>
+    </ul>
+    
+    <h2>Get Started</h2>
+    <a href="{% url 'login' %}">Sign In</a> or <a href="{% url 'register' %}">Sign Up</a>
+    
+    <h2 id="feedback">Feedback</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>
