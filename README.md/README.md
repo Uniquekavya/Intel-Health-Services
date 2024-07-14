@@ -1,63 +1,23 @@
-" INTEL HEALTH SERVICES"
+  Student Details
 
-Overview:
-Intel Health Services is a Django-based web application that provides a comprehensive listing of hospitals. It allows users to search for hospitals by specialties and view detailed information about each hospital.
+- **Name:** Kavyashreek
+- **Course:** ECE 4th Semester
+- **College:** Vemana Institute of Technology
 
-Table of Contents:
-- [Overview]
-- [Features]
-- [Installation]
-- [Usage]
-- [Contributing]
-- [Credits]
-- [License]
+### Problem Statement
 
-Features:
+The aim of this project was to develop an integrated system that provides common services to the public. The system should facilitate easy access to essential information and services, enhancing convenience and efficiency for users.
 
-- User authentication (login, register).
-- Hospital listing with details like name, address, specialties.
-- Detailed hospital view with contact information.
-- Responsive design using CSS.
+### Solution
 
-Installation:
+I implemented this project using Django, a high-level Python web framework. The application, named "Intel Health Services," serves as a comprehensive listing of hospitals. It allows users to search for hospitals by specialties, view detailed information such as contact details and specialties offered, and register/login securely to access these services.
 
-To run this project locally, follow these steps:
+The project includes:
+- User authentication (registration and login).
+- Hospital listing with details like name, address, and specialties.
+- Responsive design using CSS for a user-friendly experience.
 
-1. Clone the repository:
-git clone https://github.com/Uniquekavya/Intel-Health-Services.git
-
-2. Navigate into the project directory:
-cd intel
-
-3. Install dependencies:
-pip install -r requirements.txt
-
-4. Apply migrations:
-python manage.py migrate
-
-5. Start the development server:
-python manage.py runserver
-
-6. Open `http://localhost:8000` in your web browser to access the application.
-
-Usage:
-
-- Register a new account or log in using existing credentials.
-- Search for hospitals by specialties.
-- Click on a hospital to view detailed information including contact details.
-
-Contributing:
-
-We welcome contributions to improve Intel Health Services! To contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/improvement`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature/improvement`).
-6. Create a new Pull Request.
-
-
+You can download the full project report [here](link_to_your_report.pdf).
 
 - Developed by Kavyashree.K
 For support or inquiries, please contact [kavyashreek.ec2022@vemanait.edu.in].
