@@ -4,13 +4,13 @@
 Intel Health Services is a Django-based web application that provides a comprehensive listing of hospitals. It allows users to search for hospitals by specialties and view detailed information about each hospital.
 
 ### Table of Contents:
-- [Overview]
-- [Features]
-- [Installation]
-- [Usage]
-- [Contributing]
-- [Credits]
-- [License]
+- Overview
+- Features
+- Installation
+- Usage
+- Contributing
+- Credits
+- License
 
 ### Features:
 
@@ -23,22 +23,26 @@ Intel Health Services is a Django-based web application that provides a comprehe
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Install python 3.12.4 and Add to Path
+   
+2. Install Django 5.0.6 inside your Virtual environment
+
+3. Clone the repository:
 git clone https://github.com/Uniquekavya/Intel-Health-Services.git
 
-2. Navigate into the project directory:
+4. Navigate into the project directory:
 cd intel
 
-3. Install dependencies:
+5. Install dependencies:
 pip install -r requirements.txt
 
-4. Apply migrations:
+6. Apply migrations:
 python manage.py migrate
 
-5. Start the development server:
+7. Start the development server:
 python manage.py runserver
 
-6. Open `http://localhost:8000` in your web browser to access the application.
+8. Open `http://localhost:8000` in your web browser to access the application.
 
 ### Usage:
 
@@ -76,7 +80,7 @@ The project includes:
 - Hospital listing with details like name, address, and specialties.
 - Responsive design using CSS for a user-friendly experience.
 
-You can download the full project report [here](link_to_your_report.pdf).
+You can download the full project report [here](https://drive.google.com/file/d/1ZEVoZ1WwDJg7NpD0DWOMlNnaAhaA2e3Q/view?usp=drivesdk ).
 
 - Developed by Kavyashree.K
 For support or inquiries, please contact [kavyashreek.ec2022@vemanait.edu.in].
