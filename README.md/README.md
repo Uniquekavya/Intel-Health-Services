@@ -9,8 +9,6 @@ Intel Health Services is a Django-based web application that provides a comprehe
 - Installation
 - Usage
 - Contributing
-- Credits
-- License
 
 ### Features:
 
@@ -80,7 +78,12 @@ The project includes:
 - Hospital listing with details like name, address, and specialties.
 - Responsive design using CSS for a user-friendly experience.
 
+### Report
 You can download the full project report [here](https://drive.google.com/file/d/1ZEVoZ1WwDJg7NpD0DWOMlNnaAhaA2e3Q/view?usp=drivesdk ).
+
+## Demo
+Watch a demo of the Intel Health Services web application in action [here](https://drive.google.com/file/d/1ZMaCEX4HYRyyiWo-gomV_iM2mMwGek73/view?usp=drivesdk ).
+
 
 - Developed by Kavyashree.K
 For support or inquiries, please contact [kavyashreek.ec2022@vemanait.edu.in].
